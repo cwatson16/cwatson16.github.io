@@ -4,7 +4,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: #FFF8DC;
+  background-color: #FFFFE0;
   color: #0a0a0a;
 }
 
@@ -13,32 +13,19 @@ h1 {
 	text-align: center;
 	color:rgb(5, 5, 5);
 }
-h4 {
-	font-family: 'Rubik';
-	font-size: 40px;
-	color:rgb(99, 99, 99)
-}
 
-a {
-  transition: all 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
 
 p {
   line-height: 1.8;
   text-align: center;
-  font-size: 12px;
+  font-size: 30px;
   color:rgb(5, 5, 5);
   font-family: 'Rubik';
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-	background-color: #FFF8DC;
+	background-color:	#FFFFE0;
 	overflow: hidden;
   }
   
@@ -53,8 +40,8 @@ p {
   
   /* Change the color of links on hover */
   .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
   }
   
   /* Add a color to the active/current link */
@@ -67,17 +54,19 @@ p {
 input[type=text], select, textarea {
 	width: 100%; /* Full width */
 	padding: 12px; /* Some padding */ 
-	border: 1px solid #FFF8DC; 
+	border: 1px solid#FFFFE0; 
 	border-radius: 4px; /* Rounded borders */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
 	margin-top: 6px; /* Add a top margin */
 	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	background-color: #fcfce9;
+	
   }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-	background-color: #FFF8DC;
+	background-color: #fcfce9;
 	color: rgb(5, 5, 5);
 	padding: 12px 20px;
 	border: none;
@@ -87,100 +76,16 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker color */
   input[type=submit]:hover {
-	background-color: #e5e7e5;
+	background-color: #ffeda3;
   }
   
   /* Add a background color and some padding around the form */
   .container {
 	border-radius: 5px;
-	background-color: #FFF8DC;
+	background-color: #FFFFE0;
 	padding: 20px;
   }
 
-.tm-primary-color {
-  color: #61AEAE;
-}
-
-.tm-secondary-color {
-  color: #0099CC;
-}
-
-
-.tm-page-container {
-  max-width: 600px;
-  width: 100%;  
-}
-
-.tm-section {
-  margin-bottom: 155px;
-  position: relative;
-}
-
-.tm-content-container {      
-  border-radius: 20px;
-  background-color: white;
-}
-
-.tm-nav {
-  position: absolute;
-  right: -150px;
-  top: 45px;
-}
-
-.tm-nav > ul > li {
-  list-style: none;
-}
-
-.tm-nav > ul > li > a {
-  display: block;
-  padding: 12px 15px;
-  color: #999A9B;
-}
-
-.tm-nav > ul > li.active > a,
-.tm-nav > ul > li > a:hover,
-.tm-nav > ul > li > a:focus {
-  color: #0299CC;
-}
-
-.tm-nav-deco {
-  display: inline-block;
-  width: 20px;
-  height: 8px;
-  background-color: #999A9B;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-
-.tm-nav > ul > li.active > a > .tm-nav-deco,
-.tm-nav > ul > li:hover > a > .tm-nav-deco
- {
-  background-color: #0299CC;
-}
-
-.tm-content {  
-  padding: 55px;
-}
-
-.tm-header {
-  padding: 65px 15px;
-}
-
-.tm-title {
-  font-size: 2rem;
-  color: #626364;
-}
-
-.tm-page-title {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-  color: #656667;
-}
-
-.tm-img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;  
-}
 
 .footer {
 	position: fixed;
@@ -189,180 +94,4 @@ input[type=text], select, textarea {
 	width: 100%;
 	color: rgb(5, 5, 5);
 	text-align: center;
-}
-
-
-.tm-gallery-item figure {
-	position: relative;	
-	overflow: hidden;
-	margin-bottom: 0;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
-
-.tm-gallery-item figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
-}
-
-.tm-gallery-item figure figcaption {
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.tm-gallery-item figure figcaption::before,
-.tm-gallery-item figure figcaption::after {
-	pointer-events: none;
-}
-
-.tm-gallery-item figure figcaption,
-.tm-gallery-item figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.tm-gallery-item figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.tm-gallery-item figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.tm-gallery-item figure h2 span {	font-weight: 800; }
-
-.tm-gallery-item figure h2,
-.tm-gallery-item figure p {
-	margin: 0;
-}
-
-.tm-gallery-item figure p {
-	letter-spacing: 1px;
-	font-size: 60.5%;
-	max-width: 200px;
-	margin: 0 auto;
-}
-
-.tm-gallery {
-  margin-top: 40px;
-  margin-left: -30px;
-  margin-right: -30px;
-  margin-bottom: -20px;
-}
-
-.tm-gallery-item {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	max-width: 270px;
-}
-
-.tm-content-2 {
-	padding-left: 45px;
-	padding-right: 45px;
-}
-
-figcaption {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.tm-img-overlay-wrap {
-	position: relative;
-	min-height: 280px;
-	background-image: url(../img/contact-image-header.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-.tm-img-overlay {
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-}
-
-.tm-img-overlay-text {
-	position: relative;
-	z-index: 1000;
-}
-
-.tm-contact-form {
-	max-width: 380px;
-}
-
-.form-group {
-	margin-bottom: 35px;
-}
-
-.btn {
-	font-size: 1.1rem;
-	padding: 10px 35px;
-	border: none;
-}
-
-.btn-primary {
-	background-color: #9999CC;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-	background-color: #9a9afc;
-}
-
-.tm-small {
-	font-size: 90%;
-}
-
-@media (max-width: 945px) {
-  .tm-nav {
-    position: static;
-  }
-
-  .tm-page-container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 575px) {
-	.tm-gallery-item {
-		max-width: 100%;
-		height: auto;
-	}
-}
-
-@media (max-width: 480px) {
-  footer {
-    display: block;
-  }
-
-  footer span {
-    display: block;
-    padding: 15px;
-  }
 }
